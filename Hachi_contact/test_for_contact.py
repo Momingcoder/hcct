@@ -3,7 +3,7 @@
 
 import unittest
 
-from Hachi_contact import Contact
+from contact import Contact
 
 class ContactTestCase(unittest.TestCase):
     """
