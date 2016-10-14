@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = 'hcct',
-    version = '0.0.1',
+    version = '0.0.2',
     description = 'A plugin for Hachi to detect contacts.',
     author = 'MomingCoder',
     author_email = 'a398445075@gmail.com',
