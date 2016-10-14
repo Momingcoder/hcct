@@ -4,13 +4,12 @@
 from setuptools import setup, find_packages
 
 setup(
-    name = 'Hachi_contact',
-    version = '0.1',
-    description = 'A plugin for Hachi',
+    name = 'hcct',
+    version = '0.0.1',
+    description = 'A plugin for Hachi to detect contacts.',
     author = 'MomingCoder',
     author_email = 'a398445075@gmail.com',
-    url = 'https://github.com/guokr/Hachi-contact',
-    download_url = 'https://github.com/guokr/hachi-filter/tarball/0.1',
+    url = 'https://github.com/guokr/Hachi',
     license = 'MIT',
     keywords = ['filter', 'Hachi', 'plugin', 'contact'],
     classifiers = ['Topic :: Text Processing'],
