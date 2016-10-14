@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.pickle
+*.pypirc
 
 # C extensions
 *.so
