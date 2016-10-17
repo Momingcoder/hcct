@@ -11,7 +11,7 @@ class ContactTestCase(unittest.TestCase):
     """
 
     def test_predict(self):
-        ctt = Contact(['url', 'telephone'])
+        ctt = Contact()
         msg = u'给你一个网址\
                 https://123456789?tel=15512345678?wechat=weixin1234。\
                 再来个邮箱什么的abc123[at]email.com，留个QQ:123456，\

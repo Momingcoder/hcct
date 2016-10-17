@@ -9,6 +9,8 @@ class Contact(HachiFilter):
     Detect contact information.
     """
     def __init__(self, args=[]):
+        if args == []:
+            args = ['wechat', 'url', 'email', 'telephone', 'blur', 'QQ']
         self.filter = Extractor(args=args, limit=6)
 
     def predict(self, message, level=0):
