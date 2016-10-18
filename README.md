@@ -14,5 +14,3 @@ Default args: `['url', 'wechat', 'QQ', 'telephone', 'blur', 'email']`
 ## Dependence
 
 * cnprep
-* xpinyin
-* jieba
