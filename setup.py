@@ -14,7 +14,6 @@ setup(
     keywords = ['filter', 'Hachi', 'plugin', 'contact'],
     classifiers = ['Topic :: Text Processing'],
     packages = find_packages(),
-    install_requires = ['xpinyin',
-                        'cnprep'],
+    install_requires = ['cnprep'],
     platform = ['Windows', 'Linux', 'Mac'],
 )

@@ -4,13 +4,18 @@
 import pickle
 import os
 
-def file2list(filename):
-    if not isinstance(filename, str):
+def u(x):
+    if not isinstance(x, unicode):
+        return x.decode('utf-8')
+    return x
+
+def file2list(f):
+    if not isinstance(f, str):
         raise TypeError
     listr = []
-    with open(filename, 'r') as ff:
+    with open(f, 'r') as ff:
         for line in ff.readlines():
-            listr.append(line.strip())
+            listr.append(u(line.strip()))
     return listr
 
 class HachiFilter(object):
@@ -34,17 +39,9 @@ class HachiFilter(object):
                 self.filter = pickle.load(fr)
                 fr.close()
 
-    def load_data(self, filepath):
-        data = file2list(filepath)
-        return data
-
-    def fit(self):
-        data_path = './data.csv'
-        if os.path.exists(data_path):
-            self.filter.fit(load_data(data_path))
-
     def predict(self, message, level=0):
         return self.filter.predict(message)
 
     def reset_param(self, arg):
         self.arg = arg
+        self.load_model()
