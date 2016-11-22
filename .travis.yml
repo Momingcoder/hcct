@@ -4,5 +4,8 @@ language:
 python:
     - "2.7"
 
+install:
+    - pip install cnprep
+
 script:
     python test_for_contact.py
