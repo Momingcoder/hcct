@@ -3,7 +3,7 @@
 
 import unittest
 
-from contact import Contact
+from hcct.contact import Contact
 
 class ContactTestCase(unittest.TestCase):
     """
